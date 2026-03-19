@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mikeegivieer.github.io/sitemap.xml
