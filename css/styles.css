@@ -144,6 +144,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    overflow: visible;
 }
 ol,
 ul{
@@ -161,6 +162,21 @@ figure{
 figure img{
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.header .logo img{
+    display: block;
+    margin: 0;
+    transform: translateY(35px);
+    position: relative;
+    z-index: 2;
 }
 
 .menu{
@@ -431,6 +447,9 @@ figure img{
          text-align: center;
          padding: 0 10px;
          margin: 0;
+     }
+     .header .logo img{
+         transform: none;
      }
      
 
