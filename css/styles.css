@@ -143,7 +143,7 @@ h2{
     height: 70px;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 ol,
 ul{
@@ -154,6 +154,7 @@ ul{
 figure{
    
     margin-bottom: 0;
+    margin-right: auto;
 }
 
 
@@ -163,6 +164,17 @@ figure img{
 }
 
 .menu{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
     height: inherit;
 }
 .header ol{
