@@ -133,6 +133,9 @@ h2{
 .project-imageContainer{
     width: 50%;
 }
+.project-media-align{
+    text-align: right;
+}
 .project-imageContainer img{
     max-width: 100%;
 }
@@ -478,6 +481,14 @@ figure img{
          width: auto;
          text-align: center;
      }
+     .mobile-center-media{
+         text-align: center !important;
+     }
+     .mobile-center-media img{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
      .project-details{
          width: auto;
          /* font-size: 16px; */
@@ -547,6 +558,9 @@ figure img{
         width: auto;
         text-align: center;
         margin: 0;
+    }
+    .project-media-align {
+        text-align: center;
     }
     .event-detail{
         margin: -2em .5em .5em;
@@ -623,4 +637,4 @@ figure img{
         width: 250px;
     }
 
-    }
+}
