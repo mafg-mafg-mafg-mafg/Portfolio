@@ -258,11 +258,15 @@
             <section id="contacto" class="contact" aria-label="Contact form and social networks">
                 <div class="container" role="region" aria-label="Contact and social networks">
                     <!-- Contact form -->
-                    <form action="mailto:mikeegivieer@gmail.com" method="post" enctype="text/plain" class="form-email" aria-label="Contact form via email">
+                    <form id="contact-form" class="form-email" aria-label="Contact form via email">
                         <h3 tabindex="0"><strong>Let's create something together? Write to me.</strong></h3>
-                        <label for="mail" class="sr-only">Email</label>
-                        <input type="email" id="mail" name="mail" placeholder="E-mail" aria-label="Email" required>
-                        <button type="submit" aria-label="Send email">Send</button>
+
+                        <textarea id="contact-message" name="message" placeholder="Tell me about your project" aria-label="Contact message" rows="4" required></textarea>
+
+                        <div class="form-actions">
+                            <button type="submit" aria-label="Send message">Send</button>
+                        </div>
+                        <p id="form-status" class="form-status" aria-live="polite"></p>
                     </form>
                     <!-- Social network links -->
                     <div class="social" aria-label="Social networks">
@@ -275,12 +279,13 @@
             <footer class="footer" role="contentinfo" aria-label="Footer">
                 <div class="container">
                     <div>
-                        <p><img src="images/android2.svg" width="60" alt="Android Developer Logo" role="img" aria-label="Android Developer Logo" style="border: 2px solid #2a6ec6;"> </p>
+                        <p><img  role="img" aria-label="Android Developer Logo"> </p>
                     </div>
                 </div>
             </footer>
             <!-- Script for responsive menu (can be separated into external file if it grows) -->
             <script src="js/nav.min.js"></script>
+            <script src="js/contact.js"></script>
        
     </body>
 </html>

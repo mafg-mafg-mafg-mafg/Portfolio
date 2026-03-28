@@ -216,8 +216,17 @@ figure img{
     background-color: #1b2127;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    min-height: 140px;
+    padding: 20px 0;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .footer img{
     vertical-align: middle;
@@ -271,7 +280,8 @@ figure img{
 .contact{
     background: #2a6ec6;
     color: white;
-    height: 185px;
+    min-height: 260px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -280,7 +290,7 @@ figure img{
 }
 
 .social{
-
+    flex: 0 0 auto;
 }
 
 .social-link {
@@ -321,6 +331,48 @@ figure img{
    background-position-y: center;
    background-position-x: 5px;
    margin-bottom: 10px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.form-email{
+    flex: 1 1 760px;
+    width: 100%;
+    max-width: 980px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-email h3,
+.form-email textarea,
+.form-actions{
+    width: 100%;
+}
+
+.form-actions{
+    margin-top: 14px;
+}
+
+.contact-note{
+    margin: 0 0 10px;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.form-email textarea{
+   border-color: gray;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px 12px;
+   margin-bottom: 0;
+    width: 50%;
+    max-width: 100%;
+   box-sizing: border-box;
+   resize: vertical;
+   min-height: 105px;
+   font-family: inherit;
 }
 
 .form-email button{
@@ -329,8 +381,33 @@ figure img{
     background: transparent;
     color: white;
     padding: 10px 0;
-    width: 100px;
+    width: 220px;
+    max-width: 100%;
     border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.form-email button:hover,
+.form-email button:focus-visible{
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.form-email .secondary-btn{
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-direct-email{
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.form-status{
+    min-height: 18px;
+    margin: 0;
+    font-size: 13px;
 }
 
 .form-email h3{
@@ -572,14 +649,34 @@ figure img{
         display: block;
         text-align: center;
     }
+    .form-email{
+        margin: 0 auto;
+        align-items: center;
+    }
+    .form-email h3,
+    .form-email textarea,
+    .form-actions,
+    .form-status{
+        width: min(92vw, 560px);
+        margin-left: auto;
+        margin-right: auto;
+    }
     .form-email button {
         margin: 1em auto;
+    }
+    .form-actions{
+        justify-content: center;
     }
     .form-email h3{
         margin-top: 0;
     }
+    .form-email textarea{
+        width: min(92vw, 560px);
+    }
     .footer{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         border: 1px solid transparent;
     }
